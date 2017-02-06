@@ -73,7 +73,47 @@ public class MapController implements Initializable {
         btback.setOnMouseClicked((MouseEvent e)->{
             back();
         });
+        
+        rg1.setOnMouseClicked((MouseEvent e)->{
+            pane();
+            lbcheck.setText(lbcheck.getText() + "1");
+        });
+        
+        rg2.setOnMouseClicked((MouseEvent e)->{
+            pane();
+            lbcheck.setText(lbcheck.getText() + "2");
+        });
+        
+        rg3.setOnMouseClicked((MouseEvent e)->{
+            pane();
+            lbcheck.setText(lbcheck.getText() + "3");
+        });
+        
+        rg4.setOnMouseClicked((MouseEvent e)->{
+            pane();
+            lbcheck.setText(lbcheck.getText() + "4");
+        });
+        
+        rg6.setOnMouseClicked((MouseEvent e)->{
+            pane();
+            lbcheck.setText(lbcheck.getText() + "6");
+        });
+        
+        rg7.setOnMouseClicked((MouseEvent e)->{
+            pane();
+            lbcheck.setText(lbcheck.getText() + "7");
+        });
+        
+        rg8.setOnMouseClicked((MouseEvent e)->{
+            pane();
+            lbcheck.setText(lbcheck.getText() + "8");
+        });
     }    
+    public void pane(){
+        panelmenu.setVisible(true);
+        
+    }
+    
     public void back(){
         AboutMarathon aboutMarathonM = new AboutMarathon();
         try {

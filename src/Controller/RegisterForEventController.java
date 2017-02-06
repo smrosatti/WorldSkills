@@ -85,7 +85,6 @@ public class RegisterForEventController implements Initializable {
         try {
             ModelDao dao = new ModelDao();
             ObservableList<Model.Charity> c = FXCollections.observableArrayList(dao.getList("Charity"));
-
             boxcharity.setItems(c);
         } catch (Exception ee) {
             ee.printStackTrace();
