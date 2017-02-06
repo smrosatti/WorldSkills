@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="620.0" style="-fx-background-color: #505050;" styleClass="anchor" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainScreenController">
+    <stylesheets>
+        <URL value="@../CSS/CSSStyle.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutY="114.0" prefHeight="320.0" prefWidth="619.0" styleClass="pane">
+         <children>
+            <Button fx:id="btbearunner" layoutX="129.0" layoutY="32.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="350.0" styleClass="buttons" text="I want to be a runner" />
+            <Button fx:id="btsponsor" layoutX="129.0" layoutY="116.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="350.0" styleClass="buttons" text="I want to sponsor a runner" />
+            <Button fx:id="btmore" layoutX="129.0" layoutY="203.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="350.0" styleClass="buttons" text="I want to find out more" />
+            <Button fx:id="btlogin" layoutX="526.0" layoutY="271.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="72.0" styleClass="buttons" text="Login" />
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="154.0" layoutY="33.0" prefHeight="17.0" prefWidth="311.0" styleClass="headlabel" text="Marathon Skills 2015" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="labelhrs" layoutX="132.0" layoutY="434.0" prefHeight="27.0" prefWidth="480.0" text="Horas" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="185.0" layoutY="63.0" text="Sao Paulo, Brazil&#10;Tuesday September 5 2017" textAlignment="CENTER" textFill="#b4b4b4">
+         <font>
+            <Font name="Arial Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

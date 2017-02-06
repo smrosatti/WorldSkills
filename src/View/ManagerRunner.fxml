@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: #505050;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManagerRunnerController">
+   <children>
+      <Pane layoutX="180.0" layoutY="111.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label layoutX="253.0" layoutY="30.0" text="Manage a runner" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="478.0" layoutY="125.0" text="Registered" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="101.0" layoutY="84.0" text="Email:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="463.0" layoutY="64.0" text="Registration status" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="410.0" layoutY="189.0" text="Payment Confirmed" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="456.0" layoutY="251.0" text="Race Kit Sent" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="447.0" layoutY="315.0" text="Race Attended" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="385.0" layoutY="373.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="123.0" styleClass="bt2" stylesheets="@../CSS/Screens.css" text="Preview&#10;certificate" />
+            <Pane layoutX="599.0" layoutY="101.0" prefHeight="259.0" prefWidth="4.0" style="-fx-background-color: #b4b4b4;">
+               <children>
+                  <Pane layoutX="-25.0" layoutY="70.0" prefHeight="52.0" prefWidth="54.0" style="-fx-background-color: #05ee18; -fx-background-radius: 50;">
+                     <children>
+                        <Pane layoutY="63.0" prefHeight="52.0" prefWidth="54.0" style="-fx-background-color: red; -fx-background-radius: 50;" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="-25.0" layoutY="196.0" prefHeight="52.0" prefWidth="54.0" style="-fx-background-color: red; -fx-background-radius: 50;" />
+               </children>
+            </Pane>
+            <Button layoutX="518.0" layoutY="373.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="123.0" styleClass="bt2" stylesheets="@../CSS/Screens.css" text="Edit profile" />
+            <Pane layoutX="574.0" layoutY="109.0" prefHeight="52.0" prefWidth="54.0" style="-fx-background-color: #05ee18; -fx-background-radius: 50;" />
+            <Label layoutX="65.0" layoutY="112.0" text="First Name:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="140.0" text="Last Name:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="168.0" text="Gender:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="196.0" text="Date of Birth:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="224.0" text="Country:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="252.0" text="Charity:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="280.0" text="Target to Raise:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="308.0" text="Race Kit Option:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="336.0" text="Race Events:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="84.0" text="Infos" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="112.0" text="Infos" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="140.0" text="Infos" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="168.0" text="Infos" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="281.0" text="Infos" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="253.0" text="Infos" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="225.0" text="Infos" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="197.0" text="Infos" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="310.0" text="Infos" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="152.0" layoutY="338.0" text="Infos" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="151.0" layoutY="473.0" styleClass="lb1" stylesheets="@../CSS/Screens.css" text="18 days 8 hours end 17 minutes until the race starts!" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="9.0" styleClass="lb2" stylesheets="@../CSS/Screens.css" text="MARATHON SKILLS 2015" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="7.0" layoutY="7.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="54.0" styleClass="bt1" stylesheets="@../CSS/Screens.css" text="Back" />
+      <Button layoutX="582.0" layoutY="9.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="54.0" styleClass="bt1" stylesheets="@../CSS/Screens.css" text="Logout" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0" />
+   </children>
+</AnchorPane>

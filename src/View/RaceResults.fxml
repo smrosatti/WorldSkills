@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: #505050;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MyRaceResultsController">
+   <children>
+      <Pane layoutX="180.0" layoutY="111.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label layoutX="259.0" layoutY="26.0" text="My race results" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="264.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" styleClass="bt2" stylesheets="@../CSS/Screens.css" text="View all race results" />
+            <Label layoutX="200.0" layoutY="150.0" text="Gender:" textFill="#505050">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="151.0" text="Age category:" textFill="#505050">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="267.0" layoutY="151.0" text="Male" />
+            <Label layoutX="422.0" layoutY="152.0" text="18-29" />
+            <Label layoutX="81.0" layoutY="76.0" text="This is a list of all your past race results for Marathon Skill.&#10;Overall rank compares all runners in the event.&#10;Category rank compares runners in the same gender and age categories." textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="198.0" text="Marathon" textAlignment="CENTER" textFill="#b2b2b2">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="198.0" text="Event" textAlignment="CENTER" textFill="#b2b2b2">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="351.0" layoutY="198.0" text="Time" textAlignment="CENTER" textFill="#b2b2b2">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="464.0" layoutY="189.0" text="Overall&#10;Rank&#10;" textAlignment="JUSTIFY" textFill="#b2b2b2">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="563.0" layoutY="189.0" text="Category&#10;Rank&#10;" textAlignment="JUSTIFY" textFill="#b2b2b2">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="229.0" text="2014 Japan" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="251.0" text="2013 Germany" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="273.0" text="2012 Vietnam" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="295.0" text="2011 United Kingdom" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="229.0" text="42 km Full Marathon" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="251.0" text="42 km Full Marathon" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="273.0" text="42 km Full Marathon" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="295.0" text="42 km Full Marathon" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="351.0" layoutY="229.0" text="4h 04m 12s" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="351.0" layoutY="251.0" text="4h 15m 25s" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="351.0" layoutY="273.0" text="4h 34m 16s" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="351.0" layoutY="295.0" text="4h 56m 51s" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="466.0" layoutY="229.0" text="#598" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="466.0" layoutY="251.0" text="#604" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="466.0" layoutY="273.0" text="#623" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="466.0" layoutY="295.0" text="#712" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="565.0" layoutY="295.0" text="#254" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="565.0" layoutY="273.0" text="#214" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="565.0" layoutY="251.0" text="#199" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="565.0" layoutY="229.0" text="#184" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="151.0" layoutY="473.0" styleClass="lb1" stylesheets="@../CSS/Screens.css" text="18 days 8 hours end 17 minutes until the race starts!" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="9.0" styleClass="lb2" stylesheets="@../CSS/Screens.css" text="MARATHON SKILLS 2015" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="7.0" layoutY="7.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="54.0" styleClass="bt1" stylesheets="@../CSS/Screens.css" text="Back" />
+      <Button layoutX="589.0" layoutY="7.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="54.0" styleClass="bt1" stylesheets="@../CSS/Screens.css" text="Logout" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0" />
+   </children>
+</AnchorPane>

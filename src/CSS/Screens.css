@@ -1,0 +1,93 @@
+/*hand*/
+.hand{
+    -fx-cursor: hand;
+}
+
+/*Botoes superiores cinza*/
+.bt1{
+    -fx-cursor: hand;
+    -fx-background-color: #b4b4b4;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-text-fill: #000000;
+    -fx-font: 12px "Arial";
+    -fx-text-alignment: center;
+}
+
+/*Botoes inferiores pequenos - Register/Cancel*/
+.bt2{
+    -fx-cursor: hand;
+    -fx-background-color: #EBEBEB;
+    -fx-border-color: #B4B4B4;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-text-fill: #000000;
+    -fx-font: 12px "Arial";
+    -fx-text-alignment: center;
+}
+
+/*Botoes centrais grandes*/
+.bt3{
+    -fx-cursor: hand;
+    -fx-background-color: #EBEBEB;
+    -fx-border-color: #B4B4B4;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-text-fill: #000000;
+    -fx-font: 20px "Arial";
+    -fx-text-alignment: center;
+}
+
+/*Botoes centrais grandes secundarios - Login*/
+.bt4{
+    -fx-cursor: hand;
+    -fx-background-color: #EBEBEB;
+    -fx-border-color: #B4B4B4;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-text-fill: #000000;
+    -fx-font: 15px "Arial";
+    -fx-text-alignment: center;
+}
+
+/*18 days 8 hours end 17 minutes until the race starts! - PADRÃO INFERIOR*/
+.lb1{
+    -fx-text-fill: white;
+    -fx-font: 15px "Arial";
+    -fx-text-alignment: center;
+}
+
+/*MARATHON SKILLS 2015 - PADRÃO SUPERIOR*/
+.lb2{
+    -fx-text-fill: white;
+    -fx-font: bold 20px "Arial";
+    -fx-text-alignment: center;
+}
+
+/*Campos do tipo text.*/
+.text1{
+    -fx-background-color: white;
+    -fx-border-color: #B4B4B4;
+    -fx-font: italic 12px "Arial";
+    -fx-text-alignment: center;
+}
+
+/*Campos do tipo text.*/
+.text2{
+    -fx-background-color: white;
+    -fx-border-color: #9d9d9d;
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-font: 12px "Arial";
+    -fx-text-alignment: center;
+}
+
+.buttonsgnd{
+    -fx-border-radius: 10px;
+    -fx-background-color: rgb(235,235,235);
+    -fx-background-radius: 10px;
+    -fx-border-color: rgb(80,80,80);
+    -fx-font: 15px arial, sans-serif;  
+    -fx-pref-tile-height: 350;
+    -fx-pref-tile-width: 65;
+}

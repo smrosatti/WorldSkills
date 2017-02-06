@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: #505050;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MySponsorshipController">
+   <children>
+      <Pane layoutX="180.0" layoutY="111.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label layoutX="253.0" layoutY="30.0" text="My Sponsorship" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="134.0" text="Name of the Charity" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="105.0" fitWidth="132.0" layoutX="104.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="42.0" layoutY="294.0" text="This would be the long description of the&#10;charity. It could go for a few paragraphs.&#10;&#10;This is more of the description down here, &#10;and this is some more of the description &#10;also." textAlignment="JUSTIFY" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="86.0" text="This shows all the sponsorship you have received for Marathon Skills 2015." textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="417.0" layoutY="134.0" text="Sponsor" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="552.0" layoutY="134.0" text="Amount" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="417.0" layoutY="165.0" text="Sponsor Name" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="417.0" layoutY="186.0" text="Sponsor Name" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="417.0" layoutY="207.0" text="Sponsor Name" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="417.0" layoutY="228.0" text="Sponsor Name" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="417.0" layoutY="249.0" text="Sponsor Name" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="577.0" layoutY="166.0" text="\$50" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="569.0" layoutY="187.0" text="\$120" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="569.0" layoutY="208.0" text="\$180" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="577.0" layoutY="229.0" text="\$30" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="569.0" layoutY="250.0" text="\$300" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="402.0" layoutY="277.0" prefHeight="5.0" prefWidth="228.0" />
+            <Label layoutX="515.0" layoutY="284.0" text="Total  $" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="575.0" layoutY="284.0" text="680" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="151.0" layoutY="473.0" styleClass="lb1" stylesheets="@../CSS/Screens.css" text="18 days 8 hours end 17 minutes until the race starts!" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="9.0" styleClass="lb2" stylesheets="@../CSS/Screens.css" text="MARATHON SKILLS 2015" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="7.0" layoutY="7.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="54.0" styleClass="bt1" stylesheets="@../CSS/Screens.css" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: #505050;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PreviousResultsController">
+   <children>
+      <Pane layoutX="180.0" layoutY="111.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label layoutX="232.0" layoutY="27.0" text="Previous race results" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="543.0" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" styleClass="bt2" stylesheets="@../CSS/Screens.css" text="Search" />
+            <ComboBox layoutX="135.0" layoutY="80.0" prefHeight="25.0" prefWidth="169.0" styleClass="text1" stylesheets="@../CSS/Screens.css" />
+            <Label layoutX="57.0" layoutY="84.0" text="Marathon:" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="135.0" layoutY="115.0" prefHeight="25.0" prefWidth="169.0" styleClass="text1" stylesheets="@../CSS/Screens.css" />
+            <Label layoutX="45.0" layoutY="119.0" text="Race event:" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="325.0" layoutY="119.0" text="Age category:" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="428.0" layoutY="115.0" prefHeight="25.0" prefWidth="105.0" styleClass="text1" stylesheets="@../CSS/Screens.css" />
+            <Label layoutX="364.0" layoutY="84.0" text="Gender:" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="428.0" layoutY="80.0" prefHeight="25.0" prefWidth="105.0" styleClass="text1" stylesheets="@../CSS/Screens.css" />
+            <Label layoutX="43.0" layoutY="167.0" text="Total runners:" textFill="#505050">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="209.0" layoutY="168.0" text="Total runners finished:" textFill="#505050">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="436.0" layoutY="169.0" text="Average race time:" textFill="#505050">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="151.0" layoutY="168.0" text="Label" />
+            <Label layoutX="378.0" layoutY="169.0" text="Label" />
+            <Label layoutX="577.0" layoutY="170.0" text="Label" />
+            <TableView layoutX="41.0" layoutY="202.0" prefHeight="223.0" prefWidth="572.0" styleClass="table1" stylesheets="@../CSS/Screens.css">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Rank" />
+                <TableColumn prefWidth="121.0" text="Race time" />
+                  <TableColumn prefWidth="268.0" text="Runner name" />
+                  <TableColumn prefWidth="107.0" text="Country" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Label layoutX="151.0" layoutY="473.0" styleClass="lb1" stylesheets="@../CSS/Screens.css" text="18 days 8 hours end 17 minutes until the race starts!" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="9.0" styleClass="lb2" stylesheets="@../CSS/Screens.css" text="MARATHON SKILLS 2015" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="7.0" layoutY="7.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="54.0" styleClass="bt1" stylesheets="@../CSS/Screens.css" text="Back" />
+   </children>
+</AnchorPane>

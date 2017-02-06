@@ -1,0 +1,43 @@
+/*
+ * Empty Stylesheet file.
+ */
+/*Gill, Helvetica, sans-serif*/
+
+.pane{
+    -fx-background-color: rgb(255,255,255);   
+}
+
+.anchor{
+    -fx-background-color: rgb(80, 80, 80);
+}
+
+.headlabel{
+    -fx-font: bold 25px "arial";
+    -fx-text-fill: rgb(255,255,255);
+}
+
+.labelmed{
+    -fx-font: 23px arial, sans-serif, bold;
+    -fx-text-fill: rgb(80,80,80);
+}
+
+.buttonspeq{
+    -fx-border-radius: 10px;
+    -fx-background-color: rgb(180,180,180);
+    -fx-background-radius: 10px;
+    -fx-border-color: rgb(80, 80, 80);
+    -fx-font: 15px arial, gill;
+    -fx-pref-height: 25;
+    -fx-pref-width: 60;
+}
+
+.buttonsgnd{
+    -fx-border-radius: 10px;
+    -fx-background-color: rgb(235, 235, 235);
+    -fx-background-radius: 10px;
+    -fx-border-color: rgb(80, 80, 80);
+    -fx-font: 15px arial, helvetica;
+    -fx-font-style:italic;  
+    -fx-pref-height: 75;
+    -fx-pref-width: 255;
+}

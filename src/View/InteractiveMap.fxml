@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MapController">
+   <children>
+       <Pane fx:id="panelmenu" prefHeight="57.0" prefWidth="650.0" style="-fx-background-color: #606060;">
+         <children>
+            <Label fx:id="lbmenu" layoutX="112.0" layoutY="21.0" text="Interactive map  for Marathon Skills 2015" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btback" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" styleClass="buttonspeq" stylesheets="@../CSS/CSSStyle.css" text="Back" />
+         </children>
+      </Pane>
+      <ImageView fx:id="imgmap" fitHeight="342.0" fitWidth="430.0" layoutX="-1.0" layoutY="57.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagem/Map.PNG" />
+         </image>
+      </ImageView>
+      <Region fx:id="rg1" layoutX="228.0" layoutY="71.0" prefHeight="25.0" prefWidth="35.0" />
+      <Region fx:id="rg2" layoutX="273.0" layoutY="164.0" prefHeight="25.0" prefWidth="35.0" />
+      <Region fx:id="rg3" layoutX="263.0" layoutY="229.0" prefHeight="25.0" prefWidth="35.0" />
+      <Region fx:id="rg4" layoutX="358.0" layoutY="302.0" prefHeight="25.0" prefWidth="35.0" />
+      <Region fx:id="rg5" layoutX="207.0" layoutY="347.0" prefHeight="25.0" prefWidth="35.0" />
+      <Region fx:id="rg6" layoutX="93.0" layoutY="315.0" prefHeight="25.0" prefWidth="28.0" />
+      <Region fx:id="rg7" layoutX="51.0" layoutY="258.0" prefHeight="25.0" prefWidth="35.0" />
+      <Region fx:id="rg8" layoutX="42.0" layoutY="161.0" prefHeight="25.0" prefWidth="35.0" />
+      <Pane fx:id="pane" layoutX="393.0" layoutY="77.0" prefHeight="191.0" prefWidth="200.0" style="-fx-background-color: #ebebeb; -fx-border-color: #000000;" visible="false">
+         <children>
+            <Label fx:id="lbcheck" layoutX="18.0" layoutY="14.0" text="Checkpoint" textFill="#5a5a5a">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="48.0" text="Features listed here:" textFill="#505050">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="77.0" text="&#9;- Drink stands&#10;&#9;- Energy bars&#10;&#9;- Toilets&#10;&#9;- Medical services" textFill="#505050">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/12/2016, 15:54:39
+    Author     : pc1
+*/
+.pane{
+    -fx-background-color: rgb(255,255,255);
+}
+
+.headlabel{
+    -fx-font: bold 25px "arial";
+    -fx-text-fill: rgb(255,255,255);
+}
+
+.labelmed{
+    -fx-font: 20px arial, sans-serif, bold;
+    -fx-text-fill: rgb(180,180,180);
+}
+
+.anchor{
+    -fx-background-color: rgb(80,80,80);
+}
+
+.textfield{
+    -fx-border-style: solid;
+    -fx-border-color: rgb(180,180,180);
+    
+}
+
+.lbgeral{
+    -fx-text-fill: rgb(80,80,80);
+    -fx-font: 15px arial, sans-serif;
+}
+
+.lbgnd{
+    -fx-font: 20px arial, sans-serif, bold;
+     -fx-text-fill: rgb(80,80,80);
+}
+
+.buttons{
+    -fx-border-radius: 7px;
+    -fx-background-color: rgb(235,235,235);
+    -fx-background-radius: 7px;
+    -fx-border-color: rgb(80,80,80);
+    -fx-font: 15px arial, sans-serif;   
+}
+
+.buttonspeq{
+    -fx-border-radius: 10px;
+    -fx-background-color: rgb(180,180,180);
+    -fx-background-radius: 10px;
+    -fx-border-color: rgb(80,80,80);
+    -fx-font: 13px arial, sans-serif;
+    -fx-pref-tile-height: 60;
+    -fx-pref-tile-width: 25;
+}
+
+.buttonsgnd{
+    -fx-border-radius: 10px;
+    -fx-background-color: rgb(235,235,235);
+    -fx-background-radius: 10px;
+    -fx-border-color: rgb(80,80,80);
+    -fx-font: 15px arial, sans-serif;  
+    -fx-pref-tile-height: 350;
+    -fx-pref-tile-width: 65;
+}

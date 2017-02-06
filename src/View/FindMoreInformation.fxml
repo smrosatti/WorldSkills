@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="620.0" styleClass="anchor" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FindMoreInformationController">
+    <stylesheets>
+        <URL value="@../CSS/FindMoreCSS.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutY="50.0" prefHeight="370.0" prefWidth="620.0" styleClass="pane">
+         <children>
+            <Label layoutX="179.0" layoutY="14.0" styleClass="labelmed" text="Find out more information" />
+            <Button fx:id="btms" layoutX="48.0" layoutY="68.0" mnemonicParsing="false" styleClass="buttonsgnd" text="Marathon Skills 2017" />
+            <Button fx:id="btraceresults" layoutX="48.0" layoutY="168.0" mnemonicParsing="false" styleClass="buttonsgnd" text="Previous race results" />
+            <Button fx:id="btbmi" layoutX="48.0" layoutY="268.0" mnemonicParsing="false" styleClass="buttonsgnd" text="BMI calculator" />
+            <Button fx:id="bthow" layoutX="320.0" layoutY="68.0" mnemonicParsing="false" styleClass="buttonsgnd" text="How long is a marathon?" />
+            <Button fx:id="btlistc" layoutX="320.0" layoutY="168.0" mnemonicParsing="false" styleClass="buttonsgnd" text="List of charities" />
+            <Button fx:id="btbmr" layoutX="316.0" layoutY="268.0" mnemonicParsing="false" styleClass="buttonsgnd" text="BMR calculator" />
+         </children></Pane>
+       <Button fx:id="btback" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" styleClass="buttonspeq" text="Back" />
+      <Label layoutX="137.0" layoutY="21.0" styleClass="headlabel" text="Marathon Skills 2017" />
+   </children>
+    
+</AnchorPane>

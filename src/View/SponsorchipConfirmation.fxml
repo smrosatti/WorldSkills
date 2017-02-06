@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="620.0" style="-fx-background-color: #505050;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SponsorchipConfirmationController">
+    <stylesheets>
+        <URL value="@../CSS/CSSStyle.css" />
+    </stylesheets>
+    <children>
+      <Pane layoutY="50.0" prefHeight="370.0" prefWidth="620.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="173.0" layoutY="14.0" styleClass="lbgnd" text="Thank you for your sponsorship!" />
+            <Text layoutX="65.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="lbgeral" text="Thank you for sponsoring a runner in Marathon Skills 2015! Your donation will help out their chosen charity." textAlignment="CENTER" wrappingWidth="489.890625" />
+            <Label fx:id="labelrunner" layoutX="258.0" layoutY="116.0" styleClass="lbgnd" text="name runner" />
+            <Label layoutX="223.0" layoutY="155.0" styleClass="labelmed" text="Save The Cats Fund" />
+            <Label fx:id="labelamount" alignment="CENTER" layoutX="247.0" layoutY="192.0" prefHeight="94.0" prefWidth="137.0" text="amount" textAlignment="CENTER" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial Bold" size="35.0" />
+               </font></Label>
+            <Button fx:id="btback1" layoutX="274.0" layoutY="306.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" styleClass="buttonspeq" text="Back" />
+         </children>
+      </Pane>
+      <Button fx:id="btback2" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" styleClass="buttonspeq" text="Back" />
+      <Label layoutX="100.0" layoutY="18.0" styleClass="headlabel" text="Marathon Skills 2017" textFill="WHITE" />
+   </children>
+</AnchorPane>

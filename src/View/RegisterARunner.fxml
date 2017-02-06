@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="620.0" style="-fx-background-color: #505050;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterARunnerController">
+   <children>
+      <Pane layoutY="50.0" prefHeight="370.0" prefWidth="620.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="257.0" layoutY="29.0" text="Register as a runner" />
+            <Label layoutX="115.0" layoutY="72.0" text="Please fill out all of the following information to be registered as a runner." />
+            <Label layoutX="63.0" layoutY="119.0" text="Email:" />
+            <TextField fx:id="emailtf" layoutX="108.0" layoutY="115.0" prefHeight="25.0" prefWidth="221.0" />
+            <TextField fx:id="pnome" layoutX="108.0" layoutY="225.0" prefHeight="25.0" prefWidth="175.0" />
+            <TextField fx:id="snome" layoutX="108.0" layoutY="263.0" prefHeight="25.0" prefWidth="175.0" />
+            <Label layoutX="41.0" layoutY="154.0" text="Password:" />
+            <PasswordField fx:id="senhapf" layoutX="108.0" layoutY="150.0" prefHeight="25.0" prefWidth="175.0" />
+            <PasswordField fx:id="consenhapf" layoutX="108.0" layoutY="187.0" prefHeight="25.0" prefWidth="175.0" />
+            <Label layoutX="7.0" layoutY="191.0" text="Password Again:" />
+            <Label layoutX="37.0" layoutY="229.0" text="First Name:" />
+            <Label layoutX="37.0" layoutY="267.0" text="Last Name:" />
+            <Label layoutX="394.0" layoutY="119.0" text="Gender:" />
+            <DatePicker fx:id="niver" layoutX="445.0" layoutY="150.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="362.0" layoutY="154.0" text="Date of Byrth:" />
+            <Label layoutX="392.0" layoutY="191.0" text="Country:" />
+            <Button fx:id="btregistra" layoutX="233.0" layoutY="306.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Register" />
+            <Button fx:id="btcancel" layoutX="336.0" layoutY="306.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Cancel" />
+            <ComboBox fx:id="gender" layoutX="445.0" layoutY="113.0" prefWidth="150.0" />
+            <ComboBox fx:id="country" layoutX="445.0" layoutY="185.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+      <Button fx:id="btback" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" text="Back" />
+   </children>
+</AnchorPane>

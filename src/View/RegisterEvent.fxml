@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: #505050;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterForEventController">
+   <children>
+      <Pane layoutX="180.0" layoutY="111.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label layoutX="229.0" layoutY="43.0" prefHeight="23.0" prefWidth="193.0" text="Register for an event" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="81.0" text="Please fill out all of the following information to register for events in the Skills &#10;Marathon 2015 being held in São Paulo, Brazil. You will be contacted after you have &#10;registered to organise payment and other details." textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btregistra" layoutX="104.0" layoutY="384.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" styleClass="bt2" stylesheets="@../CSS/Screens.css" text="Register">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btcancel" layoutX="189.0" layoutY="384.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="70.0" styleClass="bt2" stylesheets="@../CSS/Screens.css" text="Cancel">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+            <Label layoutX="20.0" layoutY="349.0" text="Target to raise:" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="raisetf" layoutX="130.0" layoutY="345.0" prefHeight="25.0" prefWidth="176.0" promptText="\$500" styleClass="text1" stylesheets="@../CSS/Screens.css">
+               <font>
+                  <Font name="Arial Italic" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="98.0" layoutY="150.0" text="Competition events" textFill="#b2b2b2">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="box42" layoutX="81.0" layoutY="187.0" mnemonicParsing="false" text="42km Full marathon ($145)">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="box21" layoutX="81.0" layoutY="212.0" mnemonicParsing="false" text="21km Half marathon ($75)">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="box5" layoutX="81.0" layoutY="236.0" mnemonicParsing="false" text="5km Fun run ($20)">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="95.0" layoutY="266.0" text="Sponsorship details" textFill="#b2b2b2">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="boxcharity" layoutX="130.0" layoutY="314.0" prefHeight="25.0" prefWidth="176.0" styleClass="text1" stylesheets="@../CSS/Screens.css" />
+            <Label layoutX="69.0" layoutY="318.0" text="Charity:" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="313.0" layoutY="318.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="19.0" style="-fx-background-color: transparent; -fx-border-color: #ffd800; -fx-background-radius: 100; -fx-border-radius: 100;" styleClass="hand" stylesheets="@../CSS/Screens.css" text="i" textFill="#ffd800">
+               <font>
+                  <Font name="Arial Bold" size="9.0" />
+               </font>
+            </Button>
+            <Label layoutX="422.0" layoutY="150.0" text="Race kit options" textFill="#b2b2b2">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="opa" layoutX="402.0" layoutY="184.0" mnemonicParsing="false" text="Option A ($0): Runner's bib +&#10;RFID bracelet.">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="opb" layoutX="402.0" layoutY="232.0" mnemonicParsing="false" text="Option B ($20): Option A + hat + &#10;water bottle.">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="opc" layoutX="402.0" layoutY="275.0" mnemonicParsing="false" text="Option C ($45): Option B + t-shit &#10;+ souvenir booklet.">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="413.0" layoutY="329.0" text="Registration cost" textFill="#b2b2b2">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbcost" layoutX="436.0" layoutY="358.0" prefHeight="36.0" prefWidth="101.0" text="\$185" textAlignment="CENTER" textFill="#b2b2b2">
+               <font>
+                  <Font name="Arial" size="45.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="lbhour" layoutX="151.0" layoutY="473.0" styleClass="lb1" stylesheets="@../CSS/Screens.css" text="18 days 8 hours end 17 minutes until the race starts!" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="9.0" styleClass="lb2" stylesheets="@../CSS/Screens.css" text="MARATHON SKILLS 2015" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btback" layoutX="7.0" layoutY="7.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="54.0" styleClass="bt1" stylesheets="@../CSS/Screens.css" text="Back" AnchorPane.bottomAnchor="468.0" AnchorPane.leftAnchor="7.0">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+      <Button fx:id="btlogout" layoutX="583.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" styleClass="bt1" stylesheets="@../CSS/Screens.css" text="Logout" AnchorPane.bottomAnchor="468.0" AnchorPane.leftAnchor="583.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

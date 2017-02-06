@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="620.0" style="-fx-background-color: #505050;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SponsorARunnerController">
+    <stylesheets>
+        <URL value="@../CSS/CSSStyle.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutY="50.0" prefHeight="370.0" prefWidth="620.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="233.0" layoutY="12.0" styleClass="labelmed" text="Sponsor a runner" />
+            <Text layoutX="9.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="lbgeral" text="Please choose the runner you would like to sponsor and the amount you would like to sponsor them for. Thank you for your support of the runners and their charities!" textAlignment="CENTER" wrappingWidth="602.890625" />
+            <Label layoutX="106.0" layoutY="94.0" styleClass="labelmed" text="Sponsorship details" />
+            <Label layoutX="27.0" layoutY="140.0" styleClass="lbgeral" text="Your Name:" />
+            <Label layoutX="48.0" layoutY="175.0" styleClass="lbgeral" text="Runner:" />
+            <TextField fx:id="namefield" layoutX="116.0" layoutY="136.0" prefHeight="25.0" prefWidth="182.0" promptText="Your name" styleClass="textfield" />
+            <TextField fx:id="cardfield" layoutX="116.0" layoutY="205.0" prefHeight="25.0" prefWidth="182.0" promptText="Credit card holder" styleClass="textfield" />
+            <TextField fx:id="cardcodefield" layoutX="117.0" layoutY="240.0" prefHeight="25.0" prefWidth="182.0" promptText="1234 1234 1234 1234" styleClass="textfield" />
+            <TextField fx:id="dayex" layoutX="116.0" layoutY="275.0" prefHeight="25.0" prefWidth="41.0" promptText="01" styleClass="textfield" />
+            <TextField fx:id="yearex" layoutX="178.0" layoutY="275.0" prefHeight="25.0" prefWidth="62.0" promptText="2018" styleClass="textfield" />
+            <TextField fx:id="cvcfield" layoutX="116.0" layoutY="308.0" prefHeight="25.0" prefWidth="62.0" promptText="123" styleClass="textfield" />
+            <Label layoutX="9.0" layoutY="209.0" styleClass="lbgeral" text="Name on Card:" />
+            <Label layoutX="14.0" layoutY="244.0" styleClass="lbgeral" text="Credit Card #:" />
+            <Label layoutX="27.0" layoutY="279.0" styleClass="lbgeral" text="Expiry Date:" />
+            <Label layoutX="65.0" layoutY="312.0" styleClass="lbgeral" text="CVC:" />
+            <Label layoutX="472.0" layoutY="105.0" styleClass="labelmed" text="Charity" />
+            <Label layoutX="440.0" layoutY="127.0" text="Save The Cats Fund">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="labelmoney" alignment="CENTER" layoutX="439.0" layoutY="202.0" prefHeight="64.0" prefWidth="98.0" text="\$10" textFill="#b4b4b4">
+               <font>
+                  <Font size="35.0" />
+               </font></Label>
+            <TextField fx:id="fieldmoney" alignment="CENTER" layoutX="460.0" layoutY="275.0" prefHeight="25.0" prefWidth="73.0" text="10" />
+            <Button fx:id="btmenos" layoutX="425.0" layoutY="284.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="30.0" styleClass="buttons" text="-" />
+            <Button fx:id="btmais" layoutX="538.0" layoutY="284.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="30.0" styleClass="buttons" text="+" />
+            <Button fx:id="btpay" layoutX="403.0" layoutY="317.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" styleClass="buttons" text="Pay now" />
+            <Button fx:id="btcancel" layoutX="513.0" layoutY="317.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" styleClass="buttons" text="Cancel" />
+            <ImageView fx:id="informationicon" fitHeight="51.0" fitWidth="16.0" layoutX="567.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagem/information_icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="425.0" layoutY="179.0" styleClass="labelmed" text="Amount to donate" textAlignment="CENTER" />
+            <MenuButton fx:id="runners" layoutX="116.0" layoutY="171.0" mnemonicParsing="false" prefWidth="182.0" />
+         </children>
+      </Pane>
+      <Button fx:id="btback" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" styleClass="buttonspeq" text="Back" textAlignment="CENTER" />
+      <Label layoutX="100.0" layoutY="18.0" styleClass="headlabel" text="Marathon Skills 2017" textFill="WHITE" />
+   </children>
+</AnchorPane>

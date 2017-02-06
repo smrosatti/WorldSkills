@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: #505050;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BMIController">
+   <children>
+      <Pane layoutX="180.0" layoutY="111.0" prefHeight="424.0" prefWidth="650.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label layoutX="34.0" layoutY="72.0" text="Information about what BMI is and&#10;how the calculator works.&#10;" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="262.0" layoutY="32.0" text="BMI calculator" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="237.0" text="Height:" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="268.0" text="Weight:" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="alturatf" layoutX="122.0" layoutY="234.0" prefHeight="25.0" prefWidth="48.0" styleClass="text1" stylesheets="@../CSS/Screens.css" />
+            <TextField fx:id="pesotf" layoutX="122.0" layoutY="265.0" prefHeight="25.0" prefWidth="48.0" styleClass="text1" stylesheets="@../CSS/Screens.css" />
+            <Label layoutX="178.0" layoutY="239.0" text="cm" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="178.0" layoutY="270.0" text="kg" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Pane fx:id="paneman" layoutX="34.0" layoutY="131.0" prefHeight="90.0" prefWidth="94.0" style="-fx-background-color: #EBEBEB; -fx-border-color: #505050;">
+               <children>
+                  <Label layoutX="33.0" layoutY="70.0" text="Male" textFill="#505050">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="66.0" fitWidth="70.0" layoutX="11.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Imagem/masculine-avatar.png" />
+                     </image>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="panewoman" layoutX="142.0" layoutY="131.0" prefHeight="90.0" prefWidth="94.0" style="-fx-background-color: #EBEBEB; -fx-border-color: #505050;">
+               <children>
+                  <ImageView fitHeight="66.0" fitWidth="66.0" layoutX="13.0" layoutY="1.0" pickOnBounds="true">
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <image>
+                        <Image url="@../Imagem/woman-standing-up.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="25.0" layoutY="70.0" text="Female" textFill="#505050">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="389.0" layoutY="72.0" prefHeight="199.0" prefWidth="155.0" style="-fx-background-color: #EBEBEB; -fx-border-color: #505050;">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="118.0" layoutX="19.0" layoutY="10.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Imagem/saudeiconb.png" />
+                     </image></ImageView>
+                  <Label layoutX="44.0" layoutY="164.0" text="Healthy" textFill="#505050">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="301.0" layoutY="382.0" prefHeight="9.0" prefWidth="80.0" style="-fx-background-color: gold;" />
+            <Pane layoutX="381.0" layoutY="382.0" prefHeight="9.0" prefWidth="80.0" style="-fx-background-color: #00ff00;" />
+            <Pane layoutX="461.0" layoutY="382.0" prefHeight="9.0" prefWidth="80.0" style="-fx-background-color: gold;" />
+            <Pane layoutX="541.0" layoutY="382.0" prefHeight="9.0" prefWidth="80.0" style="-fx-background-color: red;" />
+            <Label fx:id="lbbmi" layoutX="442.0" layoutY="327.0" text="24.2" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Slider fx:id="slider" layoutX="296.0" layoutY="362.0" prefHeight="14.0" prefWidth="329.0" value="50.0" />
+            <Label layoutX="307.0" layoutY="391.0" text="Underweight" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="401.0" layoutY="391.0" text="Healthy" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="471.0" layoutY="391.0" text="Overweight" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="563.0" layoutY="391.0" text="Obese" textFill="#b4b4b4">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="71.0" layoutY="9.0" styleClass="lb2" stylesheets="@../CSS/Screens.css" text="MARATHON SKILLS 2015" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btback" layoutX="7.0" layoutY="7.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="54.0" styleClass="bt1" stylesheets="@../CSS/Screens.css" text="Back">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+      <Label fx:id="lbhora" layoutX="161.0" layoutY="483.0" styleClass="lb1" stylesheets="@../CSS/Screens.css" text="18 days 8 hours end 17 minutes until the race starts!" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="473.0">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btcalcular" layoutX="35.0" layoutY="348.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" styleClass="bt2" stylesheets="@../CSS/Screens.css" text="Calculate">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btcancelar" layoutX="144.0" layoutY="348.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" styleClass="bt2" stylesheets="@../CSS/Screens.css" text="Cancel">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="-123.0" layoutY="149.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="94.0" style="-fx-background-color: transparent;" styleClass="hand" stylesheets="@../CSS/Screens.css" />
+   </children>
+</AnchorPane>

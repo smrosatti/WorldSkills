@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="620.0" style="-fx-background-color: #505050;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginScreenController">
+   <stylesheets>
+        <URL value="@../CSS/CSSStyle.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="2.0" layoutY="50.0" prefHeight="370.0" prefWidth="620.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="255.0" layoutY="27.0" styleClass="lbgnd" text="Login Form" />
+            <Text layoutX="88.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="lbgeral" text="Please lon in to the system using your email adress and password." />
+            <Label layoutX="145.0" layoutY="115.0" styleClass="lbgeral" text="Email:" />
+            <Label layoutX="119.0" layoutY="163.0" styleClass="lbgeral" text="Password:" />
+            <PasswordField fx:id="senha" layoutX="191.0" layoutY="153.0" prefHeight="25.0" prefWidth="230.0" styleClass="textfield" />
+            <TextField fx:id="email" layoutX="191.0" layoutY="105.0" prefHeight="25.0" prefWidth="230.0" styleClass="textfield" />
+            <Button fx:id="btlogin" layoutX="200.0" layoutY="208.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" styleClass="buttons" text="Login" />
+            <Button fx:id="btcancel" layoutX="306.0" layoutY="208.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" styleClass="buttons" text="Cancel" />
+         </children>
+      </Pane>
+      <Button fx:id="btback" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" styleClass="buttonspeq" text="Back" />
+      <Label layoutX="137.0" layoutY="21.0" styleClass="headlabel" text="Marathon Skills 2017" />
+   </children>
+</AnchorPane>

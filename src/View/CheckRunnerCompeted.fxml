@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: #505050;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CheckCompetedBeforeController">
+   <children>
+      <Pane layoutX="198.0" layoutY="176.0" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Button fx:id="btno" layoutX="165.0" layoutY="212.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="320.0" styleClass="buttonsgnd" stylesheets="@../CSS/Screens.css" text="I am a new competitor">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btyes" layoutX="165.0" layoutY="123.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="320.0" styleClass="buttonsgnd" stylesheets="@../CSS/Screens.css" text="I have competed before">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btlogin" layoutX="548.0" layoutY="376.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="90.0" styleClass="bt4" stylesheets="@../CSS/Screens.css" text="Login">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="btback" layoutX="7.0" layoutY="7.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="54.0" styleClass="bt1" stylesheets="@../CSS/Screens.css" text="Back" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="7.0" />
+      <Label layoutX="71.0" layoutY="7.0" styleClass="lb2" stylesheets="@../CSS/Screens.css" text="MARATHON SKILLS 2015" textFill="WHITE" AnchorPane.topAnchor="7.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelhours" layoutX="161.0" layoutY="483.0" styleClass="lb1" stylesheets="@../CSS/Screens.css" text="18 days 8 hours end 17 minutes until the race starts!" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="151.0">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+/*
+ * Empty Stylesheet file.
+ */
+.pane{
+    -fx-background-color: rgb(255,255,255);   
+}
+
+.anchor{
+    -fx-background-color: rgb(80,80,80);
+}
+
+.headlabel{
+    -fx-font: bold 25px "arial";
+    -fx-text-fill: rgb(255,255,255);
+}
+
+.buttonspeq{
+    -fx-border-radius: 10px;
+    -fx-background-color: rgb(180,180,180);
+    -fx-background-radius: 10px;
+    -fx-border-color: rgb(80, 80, 80);
+    -fx-font: 15px arial, gill;
+    -fx-pref-height: 25;
+    -fx-pref-width: 60;
+}
+
+.lbmedia{
+    -fx-text-fill: rgb(80, 80, 80);
+    -fx-font: 20px arial, helvetica;
+}
+
+.textgeral{
+    -fx-text-fill: rgb(80, 80, 80);
+    -fx-font: 15px arial, helvetica;
+}
