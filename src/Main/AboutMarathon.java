@@ -5,6 +5,7 @@
  */
 package Main;
 
+import Controller.AboutMarathonController;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -29,6 +30,10 @@ public class AboutMarathon extends Application {
 
     public static void setStage(Stage stage) {
         AboutMarathon.stage = stage;
+    }
+    
+    public AboutMarathon (String s){
+        AboutMarathonController.setH(s);
     }
     
     @Override

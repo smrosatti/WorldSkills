@@ -111,15 +111,15 @@ public class RegisterARunnerController implements Initializable {
             u.setFirstName(pnome.getText());
             u.setLastName(snome.getText());
             ModelDao dao = new ModelDao();
-           // List<Role> roles = dao.getList("Role");
-            //u.setRoleId(roles.get(1));
+            List<Role> roles = dao.getList("Role");
+            u.setRoleId(roles.get(2));
 
             dao = new ModelDao();
             dao.add(u);
 
             Runner r = new Runner();
             r.setEmail(u);
-            r.setGender(genderc);
+            r.setGender(gender.getValue());
             r.setCountryCode(country.getValue());
             r.setDateofBirth(niver.getValue());
 
@@ -137,7 +137,6 @@ public class RegisterARunnerController implements Initializable {
             ObservableList<Model.Gender> runner = FXCollections.observableArrayList(dao.getList("Gender"));
 
             gender.setItems(runner);
-            genderc = gender.getValue();
 
             dao = new ModelDao();
             ObservableList<Model.Country> countrys = FXCollections.observableArrayList(dao.getList("Country"));

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: #505050;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserManagementController">
+   <children>
+      <Pane layoutX="180.0" layoutY="111.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Label layoutX="243.0" layoutY="25.0" text="User management" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="427.0" layoutY="67.0" prefHeight="25.0" prefWidth="169.0" styleClass="text1" stylesheets="@../CSS/Screens.css" />
+            <Button layoutX="427.0" layoutY="166.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" styleClass="bt2" stylesheets="@../CSS/Screens.css" text="Refresh">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="55.0" layoutY="187.0" text="Total runners:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="187.0" text="123" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <TableView layoutX="54.0" layoutY="210.0" prefHeight="215.0" prefWidth="542.0">
+              <columns>
+                <TableColumn prefWidth="122.0" text="First Name" />
+                <TableColumn prefWidth="129.0" text="Last Name" />
+                  <TableColumn prefWidth="155.0" text="Email" />
+                  <TableColumn prefWidth="79.0" text="Role" />
+                  <TableColumn prefWidth="56.0" />
+              </columns>
+            </TableView>
+            <Button layoutX="55.0" layoutY="71.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="150.0" styleClass="bt2" stylesheets="@../CSS/Screens.css" text="+ Add a new charity">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
+            <ComboBox layoutX="427.0" layoutY="100.0" prefHeight="25.0" prefWidth="169.0" styleClass="text1" stylesheets="@../CSS/Screens.css" />
+            <Label layoutX="330.0" layoutY="71.0" text="Filter by role:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="365.0" layoutY="104.0" text="Sort by:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="365.0" layoutY="137.0" text="Search:" textAlignment="CENTER" textFill="#505050">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="427.0" layoutY="133.0" prefHeight="25.0" prefWidth="169.0" promptText="Search for..." styleClass="text1" stylesheets="@../CSS/Screens.css" />
+         </children>
+      </Pane>
+      <Label layoutX="151.0" layoutY="473.0" styleClass="lb1" stylesheets="@../CSS/Screens.css" text="18 days 8 hours end 17 minutes until the race starts!" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="9.0" styleClass="lb2" stylesheets="@../CSS/Screens.css" text="MARATHON SKILLS 2015" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="7.0" layoutY="7.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="54.0" styleClass="bt1" stylesheets="@../CSS/Screens.css" text="Back" />
+      <Button layoutX="586.0" layoutY="14.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="54.0" styleClass="bt1" stylesheets="@../CSS/Screens.css" text="Logout" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0" />
+   </children>
+</AnchorPane>

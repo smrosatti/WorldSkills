@@ -16,6 +16,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -61,10 +62,33 @@ public class BMIController implements Initializable {
     @FXML
     private Pane paneman;
     
+     private static String h;
+
+    public static String getH() {
+        return h;
+    }
+
+    public static void setH(String h) {
+        BMIController.h = h;
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-
+        
+        lbhora.setText(h);
+        
+        btback.setOnMouseClicked((MouseEvent evt) -> {
+            back();
+        });
+        
+        btcalcular.setOnMouseClicked((MouseEvent evt) -> {
+            calcular();
+        });
+        
+         btcancelar.setOnMouseClicked((MouseEvent evt) -> {
+            back();
+        });
 //Interpretation of BMI into categories:  < 18.5 Underweight  18.5 - 24.9 Healthy  25 - 29.9 Overweight  > 30 Obese
         
     } 
@@ -75,6 +99,7 @@ public class BMIController implements Initializable {
            double mh = h/100;
            int w = Integer.parseInt(pesotf.getText());
            double bmi = w / (mh*mh);
+           lbbmi.setText(Double.toString(bmi));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -82,7 +107,7 @@ public class BMIController implements Initializable {
     
      public void back() {
         try {
-            FindMoreInformation tela = new FindMoreInformation();
+            FindMoreInformation tela = new FindMoreInformation(h);
             tela.start(new Stage());
             fecha();
         } catch (Exception e) {

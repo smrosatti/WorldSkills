@@ -5,6 +5,8 @@
  */
 package Main;
 
+import Controller.AboutMarathonController;
+import Controller.BMRController;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -29,6 +31,10 @@ public class BMR extends Application {
 
     public static void setStage(Stage stage) {
         BMR.stage = stage;
+    }
+    
+     public BMR (String s){
+        BMRController.setH(s);
     }
     
     @Override

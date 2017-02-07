@@ -38,6 +38,15 @@ public class AboutMarathonController implements Initializable {
     @FXML
     private Label lbhour;
 
+     private static String h;
+
+    public static String getH() {
+        return h;
+    }
+
+    public static void setH(String h) {
+        AboutMarathonController.h = h;
+    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -65,7 +74,7 @@ public class AboutMarathonController implements Initializable {
     
      public void back() {
         try {
-            FindMoreInformation tela = new FindMoreInformation();
+            FindMoreInformation tela = new FindMoreInformation(h);
             tela.start(new Stage());
             fecha();
         } catch (Exception e) {

@@ -5,7 +5,7 @@
  */
 package Controller;
 
-import Main.AboutMarathon;
+import Main.Main;
 import Main.Map;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -115,7 +115,7 @@ public class MapController implements Initializable {
     }
     
     public void back(){
-        AboutMarathon aboutMarathonM = new AboutMarathon();
+        Main aboutMarathonM = new Main();
         try {
             aboutMarathonM.start(new Stage());
             Map.getStage().close();

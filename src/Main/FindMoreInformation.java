@@ -5,6 +5,7 @@
  */
 package Main;
 
+import Controller.FindMoreInformationController;
 import java.io.IOException;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
@@ -27,6 +28,10 @@ public class FindMoreInformation extends Application {
 
     public static Stage getStage() {
         return stage;
+    }
+    
+    public FindMoreInformation(String h){
+        FindMoreInformationController.setHour(h);
     }
 
     public static void setStage(Stage stage) {

@@ -56,7 +56,7 @@
                   <Font name="Arial" size="12.0" />
                </font>
             </Label>
-            <Pane layoutX="34.0" layoutY="131.0" prefHeight="90.0" prefWidth="94.0" style="-fx-background-color: #EBEBEB; -fx-border-color: #505050;">
+            <Pane fx:id="paneh" layoutX="34.0" layoutY="131.0" prefHeight="90.0" prefWidth="94.0" style="-fx-background-color: #EBEBEB; -fx-border-color: #505050;">
                <children>
                   <ImageView fitHeight="66.0" fitWidth="70.0" layoutX="14.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -74,7 +74,7 @@
                   <Button fx:id="manpane" mnemonicParsing="false" prefHeight="90.0" prefWidth="94.0" style="-fx-background-color: transparent;" styleClass="hand" stylesheets="@../CSS/Screens.css" />
                </children>
             </Pane>
-            <Pane layoutX="142.0" layoutY="131.0" prefHeight="90.0" prefWidth="94.0" style="-fx-background-color: #EBEBEB; -fx-border-color: #505050;">
+            <Pane fx:id="panew" layoutX="142.0" layoutY="131.0" prefHeight="90.0" prefWidth="94.0" style="-fx-background-color: #EBEBEB; -fx-border-color: #505050;">
                <children>
                   <ImageView fitHeight="66.0" fitWidth="66.0" layoutX="13.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                      <effect>

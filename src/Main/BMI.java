@@ -5,6 +5,8 @@
  */
 package Main;
 
+import Controller.BMIController;
+import Controller.BMRController;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -30,6 +32,11 @@ public class BMI extends Application {
     public static void setStage(Stage stage) {
         BMI.stage = stage;
     }
+    
+     public BMI (String s){
+        BMIController.setH(s);
+    }
+    
     
     @Override
     public void start(Stage primaryStage) throws IOException {

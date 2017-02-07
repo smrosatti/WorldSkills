@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import Main.AboutMarathon;
 import Main.BMI;
 import Main.BMR;
 import Main.FindMoreInformation;
@@ -16,6 +17,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -62,6 +64,39 @@ public class FindMoreInformationController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        btback.setOnMouseClicked((MouseEvent evt) -> {
+            back();
+        });
+        
+        btlistc.setOnMouseClicked((MouseEvent evt) -> {
+            listc();
+        });
+        
+        btbmr.setOnMouseClicked((MouseEvent evt) -> {
+            bmr();
+        });
+        
+        btbmi.setOnMouseClicked((MouseEvent evt) -> {
+            bmi();
+        });
+        
+        btraceresults.setOnMouseClicked((MouseEvent evt) -> {
+            pr();
+        });
+        
+        btms.setOnMouseClicked((MouseEvent evt) -> {
+            ms();
+        });
+    }
+    
+    public void ms(){
+        try {
+           AboutMarathon tela = new AboutMarathon(hour);
+            tela.start(new Stage());
+            fecha(); 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void pr(){
@@ -86,7 +121,7 @@ public class FindMoreInformationController implements Initializable {
 
     public void bmr() {
         try {
-            BMR tela = new BMR();
+            BMR tela = new BMR(hour);
             tela.start(new Stage());
             fecha();
         } catch (Exception e) {
@@ -96,7 +131,7 @@ public class FindMoreInformationController implements Initializable {
 
     public void bmi() {
         try {
-            BMI tela = new BMI();
+            BMI tela = new BMI(hour);
             tela.start(new Stage());
             fecha();
         } catch (Exception e) {

@@ -93,7 +93,7 @@ public class MainScreenController implements Initializable {
     
     public void more(){
         try {
-            FindMoreInformation tela = new FindMoreInformation();
+            FindMoreInformation tela = new FindMoreInformation(h);
                     tela.start(new Stage());
                     fecha();
         } catch (Exception e) {

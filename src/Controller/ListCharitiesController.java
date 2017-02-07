@@ -20,6 +20,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -33,18 +34,12 @@ public class ListCharitiesController implements Initializable {
     /**
      * Initializes the controller class.
      */
-    
-     @FXML
-    private ImageView logo2;
 
     @FXML
     private Button btback;
-
-    @FXML
-    private ImageView logo1;
-
-    @FXML
-    private Text lbtx1;
+    
+     @FXML
+    private Pane pane;
 
     @FXML
     private Text lbtx2;
@@ -52,12 +47,6 @@ public class ListCharitiesController implements Initializable {
     @FXML
     private Label lbhour;
 
-    @FXML
-    private Label lbnome1;
-
-    @FXML
-    private Label lbnome2;
-    
     public static String hours;
 
     public static String getHours() {
@@ -75,7 +64,7 @@ public class ListCharitiesController implements Initializable {
         preenche();
          btback.setOnMouseClicked((MouseEvent evt) -> {
             try {
-                FindMoreInformation tela = new FindMoreInformation();
+                FindMoreInformation tela = new FindMoreInformation(hours);
                 tela.start(new Stage());
                 ListCharities.getStage().close();
             } catch (Exception e) {
@@ -88,12 +77,32 @@ public class ListCharitiesController implements Initializable {
         try {
             ModelDao dao = new ModelDao();
             ObservableList<Charity> c = FXCollections.observableArrayList(dao.getList("Charity"));
-            lbnome1.setText(c.get(0).getCharityName());
-            lbnome2.setText(c.get(1).getCharityName());
-            lbtx1.setText(c.get(0).getCharityDescription());
-            lbtx2.setText(c.get(1).getCharityDescription());
-            logo1.setImage(new Image(c.get(0).getCharityLogo()));
-            logo2.setImage(new Image(c.get(1).getCharityLogo()));
+            int ylb= 69, yimg=69, ydes =133;
+            for(int i = 0; i < c.size(); i++){
+                Label lb = new Label();
+                lb.setText(c.get(i).getCharityName());
+                lb.setLayoutX(165);
+                lb.setLayoutY(ylb);
+                lb.setStyle("lbmedia");
+                
+                ImageView img = new ImageView();
+                img.setImage(new Image(c.get(i).getCharityLogo()));
+                img.setFitHeight(88);
+                img.setFitWidth(118);
+                img.setLayoutX(30);
+                img.setLayoutY(yimg);
+                
+                Text txt = new Text();
+                txt.setText(c.get(i).getCharityDescription());
+                txt.setLayoutX(165);
+                txt.setLayoutY(ydes);
+                
+                pane.getChildren().addAll(lb, img, txt);
+                
+                ylb = ylb + 116;
+                yimg = yimg + 116;
+                ydes = ydes + 116;
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
